@@ -6,17 +6,17 @@ export const config = {
   // 公众号APP_ID 
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  // APP_ID: "",
+  // APP_ID: "wx44f2d2b4adb70438",
 
   // 公众号APP_SECRET 
   // 建议不要填这里，请使用文档中github secret的方法进行保密配置，保护您的隐私安全。
   // 如果你非要填这里也行。脚本也能运行
-  // APP_SECRET: "",
+  // APP_SECRET: "fcacb7e5d622f81aaf2328db634e22cf",
 
   /**
    * 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如
-   * [
-   *  {
+   * [oKKas6U2AAdRhp7xbvz98FJOo8D0，
+   * {oKKas6U5U87RG1k8K3Lfk1fbkC9Y
    *    // 想要发送的人的名字
    *    name: "老婆0",
    *    // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
@@ -25,7 +25,7 @@ export const config = {
    *    useTemplateId: "zjVglIuCXo4CsraXWEio1iP7sZJ7IQEES9lDsgc4yOU",
    *    // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
    *    openUrl: "https://wangxinleo.cn"
-   *   }, 
+   *   }, kQ_ACJGhuFbkIp0YTCPXysGBK9JJBTUnD21aMwV5CuM
    * ]
    */
   USERS: [
@@ -93,9 +93,9 @@ export const config = {
   /** 天气相关 */
 
   // 默认所在省份, USERS 中没填的话, 会默认拿这里的省份
-  PROVINCE: "广东",
-  // 默认所在城市, USERS 中没填的话, 会默认拿这里的城市
-  CITY: "惠州",
+  省：“河南”
+  //默认所在城市，USERS中未填的话，默认会拿这里的城市“”
+  城市：“郑州”
 
   /** 重要节日相关 */
 
@@ -105,9 +105,9 @@ export const config = {
    * 生日时，name填写想要展示的名字，你可以填“美丽可爱亲亲老婆”
    * 节日时，name填写相应展示的节日，你可以填“被搭讪纪念日”
    */
-  FESTIVALS: [
-    {"type": "生日", "name": "老婆", "year": "1996", "date": "09-02"},
-    {"type": "节日", "name": "结婚纪念日", "year": "2020", "date": "09-03"},
+  写： [ “生日”，“名字”：“晨”，“年份”：“”2001“”，“日期”：“”11 - 07“
+    { "type" : "生日" , "name" : "老婆" , "year" : "1996" , "date" : "11-07 、"  07        "
+    { "type" : "结婚纪念日" , "name" : "结婚纪念日" , "year" : "2020" , "date" : "09-03" },
     {"type": "生日", "name": "李四", "year": "1996", "date": "09-31"},
     {"type": "节日", "name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
   ],
@@ -125,7 +125,7 @@ export const config = {
     * keyword是指暴露给测试号的模板字段，填什么就暴露什么, 请注意不要和README的出参表中的字段重复。
     * 比如：keyword: "love_date" ，在测试号中就是 {{ love_date.DATA }} 
     * */
-  CUSTOMIZED_DATE_LIST: [
+  CUSTOMIZED_DATE_LIST: ["love_day","2019-10-01"
     // 在一起的日子
     {"keyword": "love_day", date: "2015-05-01"},
     // 结婚纪念日
